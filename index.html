@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta sobre Perfumería</title>
+  <link rel="stylesheet" href="./css/perftea.css">
+</head>
+
+<body>
+  <h1 id="title">Encuesta sobre Perfumería</h1>
+  <p> ¿Cúales son tus gustos sobre fragancias? Llena los placeholders con tu información</p>
+  <div id="container">
+    <form id="survey-form">
+      <!-- 1NOMBRE -->
+      <fieldset class="section">
+        <label for="name" id="lable_nombre"><b>Nombre: </b><br> <input id="name" type="text" max="40"
+            value="Tea" /></label>
+      </fieldset>
+      <!-- 2EDAD -->
+      <fieldset class="section">
+        <label for="edad" id="label_edad"><b>Edad(opcional):</b> <br> <input id="edad" type="text" min="15" max="85"
+            value="43"></label>
+      </fieldset>
+      <!-- 3OLFATO -->
+
+      <fieldset class="section">
+        <label for="¿Cúale es tu familia olfativa preferida?" id="label_fragancia" required><b>¿Cúale es tu familia
+            olfativa preferida? </b><br>
+          <select name="type" id="favorita">
+            <option value=""></option>
+            <option value="1">Cítrica o Hespéride</option>
+            <option value="2">Floral</option>
+            <option value="3">Amaderada</option>
+            <option value="4">Fougère</option>
+            <option value="5" selected>Chipre</option>
+            <option value="6">Gourmand</option>
+          </select>
+        </label>
+        <!-- 4masc-fem -->
+        <fieldset>
+          <ul>
+            <li><label for="opciones" id="label_fragancia" required><b>¿Qué tipos de fragancias prefieres? </b></label>
+            </li>
+            <li><input title="opcion1" name="tipo_fragancia" value="1" id="opcion1" type="radio" checked> Femenina</li>
+            <li><input title="opcion2" name="tipo_fragancia" value="2" id="opcion2" type="radio"> Masculina</li>
+            <li><input title="opcion3" name="tipo_fragancia" value="3" id="opcion3" type="radio"> Unisex</li>
+          </ul>
+
+        </fieldset>
+
+        <!-- 5 variasopciones -->
+        <fieldset id="quinta">
+          <legend>
+            <b>¿Qué concentraciones utilizas de manera habitual? </b>
+          </legend>
+          <label for="opciones" required id="label_concentraciones" required></label>
+          <ul>
+            <li> <input title="opciona" name="opciones" id="opciona" type="checkbox"><b> Eau Fraîche (EF):</b> 1-3%,
+              duración corta, ideal para climas cálidos.
+            </li>
+            <li><input title="opcionb" name="opciones" id="opcionb" type="checkbox"> <b> Eau de Cologne (EDC):</b> 3-5%,
+              duración moderada, ideal para el uso diario.
+            </li>
+            <li> <input title="opcionc" name="opciones" id="opcionc" type="checkbox"> <b>Eau de Toilette (EDT):</b>
+              4-8%, duración media, versátil para diferentes ocasiones.
+            </li>
+            <li> <input title="opciond" name="opciones" id="opciond" type="checkbox" checked> <b>Eau de Parfum
+                (EDP):</b> 8-15%, duración prolongada, para la noche o eventos.
+            </li>
+            <li> <input title="opcione" name="opciones" id="opcione" type="checkbox" checked> <b>Parfum (B) o Extrait de
+                Parfum:</b> 15-30%, duración muy prolongada</li>
+          </ul>
+        </fieldset>
+
+        <!-- 6perfumesfav -->
+
+        <fieldset><label for="textArea" id="label_textarea" required>
+            <b>Nombra tres de tus perfumes preferidos</b>
+          </label>
+          <textarea id="textArea" rows="1" cols="80" selected>Calvin Klein, Coco Chanel, Carolina Herrera</textarea>
+        </fieldset>
+
+
+        <input class="center" id="button" type="submit" value="Enviar" />
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>

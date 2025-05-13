@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Chango&family=Fontdiner+Swanky&display=swap');
+
+* {
+    border: none;
+}
+
+body {
+    background-image: url("../img/fondo.jpg.jpg");
+    background-color: rgba(226, 164, 218, 1);
+    font-family: "Nunito", sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+#container {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+h1 {
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #DF00FF;
+    text-shadow: 0.8px;
+}
+
+form {
+    display: inline-block;
+    background-color: rgba(196, 124, 184, 0.445);
+    text-align: left;
+    border-radius: 20px;
+    border: none;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+#name,
+#edad,
+select,
+#textarea {
+    width: 90%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+input[type="checkbox"]:checked {
+    cursor: pointer; 
+    background-color: blue;
+}
+
+
+.center {
+    text-align: center;
+}
+
+#button {
+    display: inline-block;
+    margin-left: 40% !important;
+    border: 1px solid darkred;
+    padding: 15px;
+}
